@@ -81,7 +81,7 @@ class NewCommand extends Command {
 
                 $content = preg_replace('#%basedir%#m', $basedir, $content);
                 $content = preg_replace('#%namespace%#m', $namespace, $content);
-                $content = preg_replace('#%webroot_dir%#m', trim($webroot_dir, '/'), $content);
+                $content = preg_replace('#%webroot_dir%#m', $wr, $content);
 
                 file_put_contents($item, $content);
             }
