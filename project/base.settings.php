@@ -35,12 +35,12 @@ return array(
     'skins' => array(
         'duke' => array(
             'abs' => implode(DIRECTORY_SEPARATOR, array(dirname(__FILE__), 'vendor', 'cangulo', 'duke-skin-bootswatch')) . DIRECTORY_SEPARATOR,
-            'debug' => '/%webroot_dir%/vendor/cangulo/duke-skin-bootswatch/',
+            'debug' => '%webroot_dir%vendor/cangulo/duke-skin-bootswatch/',
             'production' => '/assets/skins/duke/',
         ),
         '%basedir%' => array(
             'abs' => implode(DIRECTORY_SEPARATOR, array(dirname(__FILE__), 'skins', '%basedir%')) . DIRECTORY_SEPARATOR,
-            'debug' => '/%webroot_dir%/skins/%basedir%/',
+            'debug' => '%webroot_dir%skins/%basedir%/',
             'production' => '/assets/skins/%basedir%/',
         ),
     ),

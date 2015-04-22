@@ -71,6 +71,14 @@ class NewCommand extends Command {
             if ($item->isFile()) {
                 $content = file_get_contents($item);
 
+                $wr = str_replace('//', '/', trim($webroot_dir, '/'));
+                if ($wr) {
+                    $wr = '/' . $wr . '/';
+                } else {
+                    $wr = '/';
+                }
+
+
                 $content = preg_replace('#%basedir%#m', $basedir, $content);
                 $content = preg_replace('#%namespace%#m', $namespace, $content);
                 $content = preg_replace('#%webroot_dir%#m', trim($webroot_dir, '/'), $content);
