@@ -1,0 +1,32 @@
+{
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "git@github.com:e59/cdc.git"
+        },
+        {
+            "type": "vcs",
+            "url": "git@github.com:e59/duke-skin-bootswatch.git"
+        },
+        {
+            "type": "vcs",
+            "url": "git@github.com:e59/duke.git"
+        }
+    ],
+    "require": {
+        "cangulo/cdc-toolkit": "dev-master",
+        "phpoffice/phpexcel": "dev-master",
+        "monolog/monolog": "~1.12@dev",
+        "graylog2/gelf-php": "dev-master",
+        "kriswallsmith/assetic": "~1.3@dev",
+        "patchwork/jsqueeze": "~2.0@dev",
+        "natxet/CssMin": "dev-master",
+        "cangulo/duke": "dev-master",
+        "cangulo/duke-skin-bootswatch": "dev-master",
+        "mpdf/mpdf": "dev-master"
+    },
+    "config": {
+        "bin-dir": "./cli/"
+    },
+    "minimum-stability": "dev"
+}

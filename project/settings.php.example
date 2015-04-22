@@ -1,0 +1,15 @@
+<?php
+return array(
+    'debug' => true,
+    'db' => array(
+        'default' => array(
+            'dsn' => 'mysql:host=localhost;dbname=very_good_db',
+            'user' => 'root',
+            'password' => 'myadmin',
+            'options' => array(
+                PDO::MYSQL_ATTR_INIT_COMMAND => 'set names utf8',
+            ),
+        ),
+    ),
+);
+

@@ -1,0 +1,24 @@
+{
+    "name": "cangulo/duke-installer",
+    "description": "Duke installer.",
+    "keywords": ["duke"],
+    "license": "Apache-2.0",
+    "authors": [
+        {
+            "name": "Eduardo Marinho",
+            "email": "e@calmaamigo.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Duke\\Installer\\Console\\": "src/"
+        }
+    },
+    "require": {
+        "symfony/console": "^2.6.6",
+        "nette/utils": "^2.3.1"
+    },
+    "bin": [
+        "duke"
+    ]
+}

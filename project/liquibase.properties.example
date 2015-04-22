@@ -1,0 +1,6 @@
+driver=org.postgresql.Driver
+classpath=/usr/share/java/postgresql.jar
+changeLogFile=database/changelog/changelog.xml
+url=jdbc:postgresql://localhost/mydb
+username=postgres
+password=pgadmin

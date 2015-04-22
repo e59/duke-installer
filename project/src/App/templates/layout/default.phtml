@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <!--<![endif]-->
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>Hello</title>
+        <?php if (\C::$debug): ?>
+            <?php include C::$root_abs . 'public_html/assets/skins/%basedir%/styles.php'; ?>
+
+            <!--[if lt IE 9]>
+            <?php include C::$root_abs . 'public_html/assets/skins/%basedir%/styles.ie.php'; ?>
+            <![endif]-->
+        <?php else: ?>
+            <link rel="stylesheet" href="<?php echo \C::$root; ?>assets/skins/%basedir%/stylesheets/styles.css">
+            <!--[if lt IE 9]>
+              <link rel="stylesheet" href="<?php echo \C::$root; ?>assets/skins/%basedir%/stylesheets/ie.css">
+            <![endif]-->
+        <?php endif; ?>
+    </head>
+    <body>
+        <h1>Hello</h1>
+        <?php echo $content; ?>
+
+        <?php if (\C::$debug): ?>
+            <?php include C::$root_abs . 'public_html/assets/skins/%basedir%/scripts.common.php'; ?>
+            <!--[if lt IE 9]>
+            <?php include C::$root_abs . 'public_html/assets/skins/%basedir%/scripts.ie.php'; ?>
+            <![endif]-->
+        <?php else: ?>
+            <script src="<?php echo \C::$root; ?>assets/skins/%basedir%/javascripts/scripts.common.js"></script>
+            <!--[if lt IE 9]>
+            <script src="<?php echo \C::$root; ?>assets/skins/%basedir%/javascripts/scripts.ie.js"></script>
+            <![endif]-->
+            <script src="<?php echo \C::$root; ?>assets/skins/%basedir%/javascripts/scripts.js"></script>
+        <?php endif; ?>
+        <?php echo $controller->js; ?>
+    </body>
+</html>
