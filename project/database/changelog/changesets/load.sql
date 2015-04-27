@@ -13,6 +13,7 @@ INSERT INTO usuario_grupo (usuario_id, grupo_id, criado) VALUES (1, 1, now());
 
 
 INSERT INTO preset (slug,titulo,descricao,metadados) VALUES ('___thumb___','Thumbnail admin','','{"width":50,"height":50}');
+INSERT INTO preset (slug,titulo,descricao,metadados) VALUES ('default-file','Default','','{"width":50,"height":50}');
 
 
 insert into permissao (grupo_id, permissao_id) values (1, 'conteudo');
