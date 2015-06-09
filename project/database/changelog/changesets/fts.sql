@@ -14,7 +14,7 @@ DECLARE
 BEGIN
    FOR m IN SELECT regexp_matches($1, E'(</?([a-z0-9_\-]+) *[^>]*>)', 'g') i LOOP
       IF (m.i[2] = ANY(v_allowed)) = FALSE THEN
-         v_result := replace(v_result, m.i[1], '');
+         v_result := replace(v_result, m.i[1], ' ');
       END IF;
    END LOOP;
    RETURN v_result;
